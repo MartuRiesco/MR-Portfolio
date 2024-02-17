@@ -1,0 +1,47 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Hero from "../components/Hero.astro";
+import ToogleDarkBtn from"../components/ToggleDarkBtn.astro"
+import Footer from "../components/Footer.astro";
+import DarkBg from "../components/DarkBg.astro"
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Skills from "../components/Skills.astro";
+import BtnToTop from "../components/BtnToTop.astro";
+
+
+import Divider1 from "../components/Dividers/Divider1.astro"
+import Divider2 from "../components/Dividers/Divider2.astro";
+import Divider3 from "../components/Dividers/Divider3.astro";
+import Divider4 from "../components/Dividers/Divider4.astro";
+import Tools from "../components/Tools.astro";
+import AboutHome from "../components/AboutHome.astro";
+import PortfolioSection from "../components/PortfolioSection.astro";
+import PostSection from "../components/PostSection.astro";
+import NavHome from "../components/Navs/NavHome.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<NavHome/>
+		<ToogleDarkBtn  />
+		<BtnToTop  />
+		<main >
+			<Hero/>
+			<DarkBg/>
+			<Divider1/>
+			<Skills/>
+			<Divider2/>
+			<Tools/>
+			<Divider3/>
+			<AboutHome/>
+			<PortfolioSection/>
+			<Divider4/>
+			<PostSection/>
+		</main>
+		<Footer />
+	</body>
+</html>
